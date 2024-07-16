@@ -2,6 +2,7 @@
     <string name="app_name">Agenda</string>
     <string name="welcome_txt">Bienvenido a la agenda</string>
     <string name="btn_new_event_txt">Nuevo evento</string>
+    <string name="btn_go_home_txt">Ir a inicio</string>
     <string name="btn_save_txt">Guardar</string>
     <string name="btn_cancel_txt">Cancelar</string>
 
@@ -9,6 +10,10 @@
     <string name="event_type_txt">Tipo de evento</string>
     <string name="event_start_txt">Fecha de inicio</string>
     <string name="event_end_txt">Fecha de fin</string>
+
+    <string name="event_hour_start_txt">Hora de inicio</string>
+    <string name="event_hour_end_txt">Hora de fin</string>
+
     <string name="event_duration_txt">Todo el día</string>
     <string name="event_description_txt">Descripción</string>
 

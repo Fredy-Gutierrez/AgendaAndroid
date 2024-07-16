@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
         android:hint="@string/event_name_txt"
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/event_type_lbl" />
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:clickable="true"
         android:ems="10"
         android:focusable="false"
@@ -74,6 +74,31 @@
         app:layout_constraintTop_toBottomOf="@+id/event_start_date_lbl" />
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/event_hour_start_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_start_date_txt" />
+
+    <EditText
+        android:id="@+id/event_hour_start_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:maxLines="1"
+        android:hint="@string/event_hour_start_txt"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
         android:id="@+id/event_end_date_lbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,14 +106,14 @@
         android:layout_marginTop="16dp"
         android:text="@string/event_end_txt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/event_start_date_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/event_hour_start_txt" />
 
     <EditText
         android:id="@+id/event_end_date_txt"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:clickable="true"
         android:ems="10"
         android:focusable="false"
@@ -99,6 +124,31 @@
         app:layout_constraintTop_toBottomOf="@+id/event_end_date_lbl" />
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/event_hour_end_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_end_date_txt" />
+
+    <EditText
+        android:id="@+id/event_hour_end_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:maxLines="1"
+        android:hint="@string/event_hour_end_txt"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
         android:id="@+id/event_duration_lbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,14 +156,14 @@
         android:layout_marginTop="16dp"
         android:text="@string/event_duration_txt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/event_end_date_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/event_hour_end_txt" />
 
     <Switch
         android:id="@+id/event_duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/event_duration_lbl" />
@@ -133,7 +183,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
         android:hint="@string/event_description_txt"
@@ -145,7 +195,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/btn_save_txt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/event_description_txt" />
@@ -154,11 +204,9 @@
         android:id="@+id/btn_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="60dp"
         android:text="@string/btn_cancel_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/event_description_txt" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
